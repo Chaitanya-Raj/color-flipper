@@ -1,0 +1,74 @@
+body {
+  transition: all linear 0.5s;
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  animation: whiten 3s;
+}
+
+@keyframes whiten {
+  0% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin: 30px;
+  color: #333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  animation: blacken 3s;
+}
+
+@keyframes blacken {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #333;
+  }
+}
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px 50px;
+  margin: 30px;
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid #333;
+  color: #333;
+  outline: none;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+  transform: translateY(550px);
+  animation: come-in 0.8s 1s ease forwards;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+button:hover,
+button:active {
+  color: azure;
+  background: #333;
+}
+
+@media (max-width: 500px) {
+  button {
+    color: azure;
+    background: #333;
+  }
+}
