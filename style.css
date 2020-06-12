@@ -61,9 +61,11 @@ button {
 }
 
 button:hover,
-button:active {
+button:active,
+button:focus {
   color: azure;
   background: #333;
+  outline: none;
 }
 
 @media (max-width: 500px) {
