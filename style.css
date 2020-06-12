@@ -26,6 +26,10 @@ h1 {
   color: #333;
   font-family: Georgia, "Times New Roman", Times, serif;
   animation: blacken 3s;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 @keyframes blacken {
@@ -66,6 +70,10 @@ button:focus {
   color: azure;
   background: #333;
   outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
 
 @media (max-width: 500px) {
